@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- TAILWIND -->
+    <title>Calcolatrice</title>
+</head>
+
+<body class="flex justify-center w-[100vh] h-[100vh] items-center bg-gradient-to-b from-[#3bbdd4] to-[#b011c2]">
+    <!-- contenitore calcolatrice -->
+    <div class="flex justify-center p-6 gap-5 flex-col w-[400px] h-[680px] rounded-[50px] bg-black shadow-lg shadow-cyan-400 hover:scale-125 transition duration-200">
+        
+        <!-- contenitore display -->
+        <div class="px-5 w-full h-[100px] rounded-[30px] flex justify-end items-center">
+            <!-- display -->
+            <p id="display" class="text-[60px] font-light text-white">0</p>
+        </div>
+        <!-- contenitore tasti -->
+        <div class="font-mono gap-4 py-8 flex flex-wrap justify-center items-center w-full h-[500px]">
+            <button class="flex justify-center items-center text-[30px] font-bold text-black w-[70px] h-[70px] rounded-[35px] bg-[#A9A9A9] hover:bg-gray-300 hover:shadow-lg hover:shadow-gray-800">C</button>
+            <button class="flex justify-center items-center text-[30px] font-bold text-black w-[70px] h-[70px] rounded-[35px] bg-[#A9A9A9] hover:bg-gray-300 hover:shadow-lg hover:shadow-gray-800">%</button>
+            <button class="flex justify-center items-center text-[24px] font-bold text-black w-[70px] h-[70px] rounded-[35px] bg-[#A9A9A9] hover:bg-gray-300 hover:shadow-lg hover:shadow-gray-800">DEL</button>
+            <button class="flex justify-center items-center text-[30px] font-bold text-white w-[70px] h-[70px] rounded-[35px] bg-[#FBA217] hover:bg-orange-300 hover:shadow-lg hover:shadow-orange-800">/</button>
+
+            <button class="flex justify-center items-center text-[30px] font-bold text-white w-[70px] h-[70px] rounded-[35px] bg-[#212121] hover:bg-gray-800 hover:shadow-lg hover:shadow-gray-500">7</button>
+            <button class="flex justify-center items-center text-[30px] font-bold text-white w-[70px] h-[70px] rounded-[35px] bg-[#212121] hover:bg-gray-800 hover:shadow-lg hover:shadow-gray-500">8</button>
+            <button class="flex justify-center items-center text-[30px] font-bold text-white w-[70px] h-[70px] rounded-[35px] bg-[#212121] hover:bg-gray-800 hover:shadow-lg hover:shadow-gray-500">9</button>
+            <button class="flex justify-center items-center text-[40px] font-bold text-white w-[70px] h-[70px] rounded-[35px] bg-[#FBA217] hover:bg-orange-300 hover:shadow-lg hover:shadow-orange-800">-</button>
+
+            <button class="flex justify-center items-center text-[30px] font-bold text-white w-[70px] h-[70px] rounded-[35px] bg-[#212121] hover:bg-gray-800 hover:shadow-lg hover:shadow-gray-500">4</button>
+            <button class="flex justify-center items-center text-[30px] font-bold text-white w-[70px] h-[70px] rounded-[35px] bg-[#212121] hover:bg-gray-800 hover:shadow-lg hover:shadow-gray-500">5</button>
+            <button class="flex justify-center items-center text-[30px] font-bold text-white w-[70px] h-[70px] rounded-[35px] bg-[#212121] hover:bg-gray-800 hover:shadow-gray-500">6</button>
+            <button class="flex justify-center items-center text-[30px] font-bold text-white w-[70px] h-[70px] rounded-[35px] bg-[#FBA217] hover:bg-orange-300 hover:shadow-lg hover:shadow-orange-800">*</button>
+
+            <button class="flex justify-center items-center text-[30px] font-bold text-white w-[70px] h-[70px] rounded-[35px] bg-[#212121] hover:bg-gray-800 hover:shadow-lg hover:shadow-gray-500">1</button>
+            <button class="flex justify-center items-center text-[30px] font-bold text-white w-[70px] h-[70px] rounded-[35px] bg-[#212121] hover:bg-gray-800 hover:shadow-lg hover:shadow-gray-500">2</button>
+            <button class="flex justify-center items-center text-[30px] font-bold text-white w-[70px] h-[70px] rounded-[35px] bg-[#212121] hover:bg-gray-800 hover:shadow-lg hover:shadow-gray-500">3</button>
+            <button class="flex justify-center items-center text-[30px] font-bold text-white w-[70px] h-[70px] rounded-[35px] bg-[#FBA217] hover:bg-orange-300 hover:shadow-lg hover:shadow-orange-800">+</button>
+
+            <button class="flex justify-center items-center text-[30px] font-bold text-white w-[160px] h-[70px] rounded-[35px] bg-[#212121] hover:bg-gray-800 hover:shadow-lg hover:shadow-gray-500">0</button>
+            <button class="flex justify-center items-center text-[30px] font-bold text-white w-[70px] h-[70px] rounded-[35px] bg-[#212121] hover:bg-gray-800 hover:shadow-lg hover:shadow-gray-500">.</button>
+            <button class="flex justify-center items-center text-[30px] font-bold text-white w-[70px] h-[70px] rounded-[35px] bg-[#FBA217] hover:bg-orange-300 hover:shadow-lg hover:shadow-orange-800">=</button>
+        </div>
+    </div>
+<script src="calcolatrice.js"></script><!-- JS -->  
+</body>
+</html>
